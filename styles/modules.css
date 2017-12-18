@@ -27,12 +27,6 @@ input[type="text"], select {
     border: 1px solid rgb(155, 155, 155);
 }
 
-label div {
-    margin-top: .25em;
-    color: red;
-    font-size: 85%;
-}
-
 button[type="submit"] {
     margin: 1em 1em 2em 0px;
     border: none;
