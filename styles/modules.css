@@ -1,0 +1,53 @@
+img {
+    display: inline-block;
+    height: 150px;
+}
+header, main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+div label {
+    display: inline-block;
+    margin-top: 0px;
+}
+
+input[type="text"], select {
+    margin-top: .5em;
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    font-size: 100%;
+    font-weight: 200%;
+    padding-left: .75em;
+    color: rgb(155, 155, 155);
+    border-radius: 2px;
+    background-color: white;
+    outline: none;
+    border: 1px solid rgb(155, 155, 155);
+}
+
+label div {
+    margin-top: .25em;
+    color: red;
+    font-size: 85%;
+}
+
+button[type="submit"] {
+    margin: 1em 1em 2em 0px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: .6em 1.75em;
+    font-size: 100%;
+    border-radius: 2px;
+}
+
+input[type="submit"]:last-of-type {
+    background-color: gray;
+    color: white;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}

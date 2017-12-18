@@ -10,38 +10,64 @@
     </head>
     <body>
         <header>
-            <div>UI Challenge - Custom Form Elements</div>
+            <h1><div>UI Challenge - Custom Form Elements</div><h1>
         </header>
 
         <main>
-            <div>text input
-                <input type="text" placeholder="placeholder text">
-            </div>
-                
-            <div>text input w/ validation error
-                <input type="text" placeholder="placeholder text" required>
-            </div>
+            <form>
+                <label>text input
+                    <input type="text" name="text-input" placeholder="placeholder text">
+                </label>
+                    
+                <label >text input w/ validation error
+                    <input class="invalid-input" type="text" name"text-input-validation" placeholder="placeholder text" required>
+                    <div class="invalid-warn">please enter a valid username</div>
+                </div>
 
-            <div>select box
-                <input type="text" placeholder="please select an option...">
-            </div>
+                <label>select box
+                    <select name="select-closed">
+                        <option value="hide">please select an option...</option>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                    </select>
+                </label>
 
-            <div>
-                <input type="text">
-            </div>
+                <label>select box - open
+                    <select name="select-open">
+                        <option>please select an option...</option>
+                    </select>
+                    <div class="option">option 1</div>
+                    <div class="option-even">option 2</div>
+                    <div class="option">option 3</div>
+                    <div class="option-even">option 4</div>
+                    <div class="option">option 5</div>
+                </label>
 
-            <div>checkbox
+                <h2>checkbox</h2>
+                <div>
+                    <img src="sprite/unchecked.png">
+                    <img src="sprite/checked.png">
+                </div>
 
-            </div>
+                <label>radio
+                    <div>
+                        <img src="sprite/unchecked-radio.png">
+                        <img src="sprite/checked-radio.png">
+                    </div>
+                </label>
 
-            <div>radio
-
-            </div>
-
-            <div>buttons
-
-            </div>
+                <label>buttons
+                    <div>
+                        <button type="submit">submit</button>
+                        <button type="submit">submit</button>
+                    </div>
+                </label>
+            </form>
         </main>
-    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="sprites.js"></script>
     </body>
 </html>
